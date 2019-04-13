@@ -1,0 +1,23 @@
+--- 
+# after_success: 
+#   - "npm run deploy"
+branches: 
+  only: 
+    - master
+    - dev
+    
+cache: 
+  directories: 
+    - node_modules
+
+dist: trusty
+env: 
+  global: 
+    - TIMEOUT=1000D
+language: node_js
+node_js: 
+  - 8
+script: 
+  - "npm run test --watchAll"
+  - "npm run build"
+sudo: false
