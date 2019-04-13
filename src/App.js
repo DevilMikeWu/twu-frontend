@@ -8,12 +8,10 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Router>
-          <Route path="/" exact component={Login}/>
-          <Route path="/list" exact component={List}/>
-        </Router>
-      </div>
+      <Router>
+        <Route path="/" exact component={Login}/>
+        <Route path="/list" exact component={List}/>
+      </Router>
     );
   }
 }
