@@ -5,7 +5,18 @@ branches:
   only: 
     - master
     - dev
-    
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  local_dir: build
+  keep_history: true
+ 
+  on:
+    branch: dev
+
+
 cache: 
   directories: 
     - node_modules
