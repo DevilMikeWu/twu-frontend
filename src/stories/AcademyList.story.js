@@ -19,5 +19,8 @@ const academies = [
 
 storiesOf('AcademyList', module)
   .add('with academies array', () => (
+    <div style={{margin: 40}}>
     <AcademyList academies={academies} />
+    </div>
+   
   ))
