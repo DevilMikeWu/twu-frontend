@@ -1,14 +1,13 @@
 {
   "main.css": "/twu-frontend/static/css/main.f69246ab.chunk.css",
-  "main.js": "/twu-frontend/static/js/main.e30caac5.chunk.js",
-  "main.js.map": "/twu-frontend/static/js/main.e30caac5.chunk.js.map",
+  "main.js": "/twu-frontend/static/js/main.041b53ee.chunk.js",
+  "main.js.map": "/twu-frontend/static/js/main.041b53ee.chunk.js.map",
   "runtime~main.js": "/twu-frontend/static/js/runtime~main.4b19027a.js",
   "runtime~main.js.map": "/twu-frontend/static/js/runtime~main.4b19027a.js.map",
-  "static/js/2.6efc73d3.chunk.js": "/twu-frontend/static/js/2.6efc73d3.chunk.js",
-  "static/js/2.6efc73d3.chunk.js.map": "/twu-frontend/static/js/2.6efc73d3.chunk.js.map",
+  "static/js/2.b1d17a3a.chunk.js": "/twu-frontend/static/js/2.b1d17a3a.chunk.js",
+  "static/js/2.b1d17a3a.chunk.js.map": "/twu-frontend/static/js/2.b1d17a3a.chunk.js.map",
   "index.html": "/twu-frontend/index.html",
-  "precache-manifest.75bf66a4191b1b68384215024b3f6c48.js": "/twu-frontend/precache-manifest.75bf66a4191b1b68384215024b3f6c48.js",
+  "precache-manifest.580c3932bb8e7476b016e3f4bad9d0e7.js": "/twu-frontend/precache-manifest.580c3932bb8e7476b016e3f4bad9d0e7.js",
   "service-worker.js": "/twu-frontend/service-worker.js",
-  "static/css/main.f69246ab.chunk.css.map": "/twu-frontend/static/css/main.f69246ab.chunk.css.map",
-  "static/media/logo.svg": "/twu-frontend/static/media/logo.5d5d9eef.svg"
+  "static/css/main.f69246ab.chunk.css.map": "/twu-frontend/static/css/main.f69246ab.chunk.css.map"
 }
