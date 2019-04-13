@@ -1,11 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import App from "./../App";
+import {shallow} from 'enzyme';
+import Academy from "./../components/academy/Academy";
 
-describe("Render Login Page", () => {
-  it("renders without crashing", () => {
-    const div = document.createElement("div");
-    ReactDOM.render(<App />, div);
-    ReactDOM.unmountComponentAtNode(div);
+
+describe("Render Academy Components", () => {
+  it('should return null when academies prop is null', () =>{
+      const wrapper = shallow(<Academy academy={null} />);
+      expect(wrapper.find('table').length).toEqual(0);
   });
 });
