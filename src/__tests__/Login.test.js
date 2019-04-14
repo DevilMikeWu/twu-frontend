@@ -34,12 +34,12 @@ test('Account just$in&666* should be false', () => {
   expect(checkAccountValidation('just$in&666*')).toBe(false);
 });
 
-test('Account 123321123321 should be false', () => {
-  expect(checkAccountValidation('123321123321')).toBe(false);
+test('Account 123321123321 should be true', () => {
+  expect(checkAccountValidation('123321123321')).toBe(true);
 });
 
-test('Account 1justin23 should be false', () => {
-  expect(checkAccountValidation('1justin23')).toBe(false);
+test('Account 1justin23 should be true', () => {
+  expect(checkAccountValidation('1justin23')).toBe(true);
 });
 
 test('Account @#$%^&* should be false', () => {
@@ -84,20 +84,20 @@ test('Account a2b3*c@d14&*ke@# should be true', () => {
   expect(checkPasswordValidation('a2b3*c@d14&*ke@#')).toBe(true);
 });
 
-test('Account abcdabcd, should be false', () => {
-  expect(checkPasswordValidation('abcdabcd,')).toBe(false);
+test('Account abcdabcd, should be true', () => {
+  expect(checkPasswordValidation('abcdabcd,')).toBe(true);
 });
 
-test('Account abCdABcd, should be false', () => {
-  expect(checkPasswordValidation('abCdABcd,')).toBe(false);
+test('Account abCdABcd, should be true', () => {
+  expect(checkPasswordValidation('abCdABcd,')).toBe(true);
 });
 
-test('Account 12345678, should be false', () => {
-  expect(checkPasswordValidation('12345678,')).toBe(false);
+test('Account 12345678, should be true', () => {
+  expect(checkPasswordValidation('12345678,')).toBe(true);
 });
 
-test('Account !@#$%^&*, should be false', () => {
-  expect(checkPasswordValidation('!@#$%^&*,')).toBe(false);
+test('Account !@#$%^&*, should be true', () => {
+  expect(checkPasswordValidation('!@#$%^&*,')).toBe(true);
 });
 
 test('Account a2b3*9, should be false', () => {

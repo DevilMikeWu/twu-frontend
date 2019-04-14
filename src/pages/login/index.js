@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Form, Button } from 'react-bootstrap';
+import { Form, Button, Spinner } from 'react-bootstrap';
+import { HashRouter as Router, Route } from "react-router-dom";
 
 import { checkAccountValidation, checkPasswordValidation } from '../../utils/login'
 import './index.css';
@@ -8,10 +9,12 @@ class App extends Component {
   state = {
     accountInvalid: false,
     passwordInvalid: false,
-    validated: false
+    validated: false,
+    loading: false
   }
 
   handleSubmit = (event) => {
+    event.preventDefault();
     const { account, password } = this.form
     if (!checkAccountValidation(account.value) || !checkPasswordValidation(password.value)) {
       event.preventDefault()
@@ -20,13 +23,16 @@ class App extends Component {
         passwordInvalid: true,
       })
     } else {
-      this.setState({ validated: true });
+      this.setState({ validated: true, loading: true });
+      setTimeout(() =>{
+        this.props.history.push('/home');
+      }, 500)
     }
   }
 
   render() {
-    const { accountInvalid, passwordInvalid, validated } = this.state
-
+    const { accountInvalid, passwordInvalid, validated, loading } = this.state
+    console.log(this.props);
     return (
       <div className="login-container">
         <div className="login-title">
@@ -77,6 +83,13 @@ class App extends Component {
             </Button>
           </Form>
         </div>
+        {loading && (
+          <div className="loading-modal">
+            <Spinner animation="border" role="status">
+              <span className="sr-only">Loading...</span>
+            </Spinner>
+          </div>
+        )}
       </div>
     );
   }

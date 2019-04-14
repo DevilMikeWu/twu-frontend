@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route, withRouter } from "react-router-dom";
 
 import Login from './pages/login'
 import HomePage from './pages/home/HomePage'
@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <Router>
         <Route path="/" exact component={Login}/>
-        <Route path="/home" exact component={HomePage}/>
+        <Route path="/home" component={HomePage}/>
       </Router>
     );
   }
