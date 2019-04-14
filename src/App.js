@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { HashRouter as Router, Route } from "react-router-dom";
 
 import Login from './pages/login'
-import List from './pages/academyList'
+import HomePage from './pages/home/HomePage'
 import './App.css';
 
 class App extends Component {
@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <Router>
         <Route path="/" exact component={Login}/>
-        <Route path="/list" exact component={List}/>
+        <Route path="/home" exact component={HomePage}/>
       </Router>
     );
   }
