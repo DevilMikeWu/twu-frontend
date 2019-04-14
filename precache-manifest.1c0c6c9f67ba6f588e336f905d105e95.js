@@ -4,23 +4,23 @@ self.__precacheManifest = [
     "url": "/twu-frontend/static/js/runtime~main.4b19027a.js"
   },
   {
-    "revision": "b123f56dca3037dc59cf",
-    "url": "/twu-frontend/static/js/main.c72a4e28.chunk.js"
+    "revision": "a85af3b37cbc7bc0a5c6",
+    "url": "/twu-frontend/static/js/main.be266156.chunk.js"
   },
   {
-    "revision": "73defd32398ce79bba0b",
-    "url": "/twu-frontend/static/js/2.3a1bda26.chunk.js"
+    "revision": "1a73dec1c0a73923079b",
+    "url": "/twu-frontend/static/js/2.9bfa544f.chunk.js"
   },
   {
-    "revision": "b123f56dca3037dc59cf",
+    "revision": "a85af3b37cbc7bc0a5c6",
     "url": "/twu-frontend/static/css/main.cccf7cfc.chunk.css"
   },
   {
-    "revision": "73defd32398ce79bba0b",
+    "revision": "1a73dec1c0a73923079b",
     "url": "/twu-frontend/static/css/2.8f23e7d5.chunk.css"
   },
   {
-    "revision": "44813bfca054e15aafff86bf3d7b68be",
+    "revision": "367f76337fa15dc68be915c2d0566fdb",
     "url": "/twu-frontend/index.html"
   }
 ];
