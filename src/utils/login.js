@@ -1,7 +1,7 @@
 export const checkAccountValidation = (account) => {
   if (typeof account !== 'string') return false
 
-  var reg = /^[a-zA-Z][\a-zA-Z0-9]{2,20}$/;
+  var reg = /^[a-zA-Z][a-zA-Z0-9]{2,20}$/;
   if (reg.test(account)) {
     return true
   } else {
