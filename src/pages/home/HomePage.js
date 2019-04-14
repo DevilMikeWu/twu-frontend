@@ -2,11 +2,8 @@ import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import {
   Navbar,
-  NavDropdown,
   Form,
-  Nav,
   Tab,
-  FormControl,
   Tabs,
   Button
 } from "react-bootstrap";
